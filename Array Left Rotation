@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int arr[200];
+	int n,i,d;
+	cout<<"Enter size of array";
+	cin>>n;
+	cout<<"Enter how many times to rotate";
+	cin>>d;
+	cout<<"Enter the elements to be rotated:";
+	for(i=0;i<n;i++){
+	cin>>arr[i];
+    }
+	cout<<"array elements after rotation : ";
+	for(int i=0;i<n;i++)
+	{
+		cout<<arr[(i+d)%n]<<" ";
+	}
+
+	return 0;
+}
