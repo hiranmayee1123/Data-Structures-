@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int i,n;
+	cout<<"Enter n value:";
+	cin>>n;
+	int arr[100];
+	int sum=0;
+	cout<<"Enter values of the array:";
+	for(i=0;i<n;i++){
+		cin>>arr[i];
+	}	
+	for(i=0;i<n;i++){
+	    sum=sum+arr[i];
+	}
+    if(sum%2==0){
+	    return 2;
+	}
+	else{
+	    return 1;
+	    }
+	}
