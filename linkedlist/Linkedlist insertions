@@ -1,0 +1,38 @@
+class Node:
+    def _init_(self,data):
+        self.data=data
+        self.next=None
+class LinkedList:
+    def _init_(self):
+        self.head=None
+    
+    def push(self,new_data):
+        new_node= Node(new_data)
+        new_node.next=self.head
+        self.head=new_node
+    def insertAfter(self,prev_node,new_data):
+        if(prev_node is None):
+            print("The given previous node is not available in the linked list")
+        new_node=Node(new_data)
+        new_data.next=prev_node.next
+        perv_node.next=new_node
+    def append(self, new_data):
+        new_node=Node(new_data)
+        if(self.head is None):
+            self.head=new_node
+            return
+        last=self.head
+        while (last.next):
+            last.next=new_node
+    def printList(self):
+        temp=self.head
+        while(temp):
+            print(temp.data,)
+            temp=temp.next
+if _name_=="main":
+    LinkedList.append(6);
+    LinkedList.append(10);
+    LinkedList.push(8)
+    LinkedList.insertAfter(llist.head.next.next,7)
+    print("Created Linked List is:", )
+    LinkedList.printList()
